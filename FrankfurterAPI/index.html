@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Frankfurter API TEST</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- CSS TEMPLATE -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- JS LIBRARIES -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="currency-row-outer" data-aos="zoom-in">
+        <div class="currency-converter">
+          <h2>Currency Converter</h2>
+    
+          <div class="field grid-50-50">
+            <div class="colmun col-left">
+              <input type="number" class="form-input" id="number" placeholder="00000">
+            </div>
+            <div class="colmun col-right">
+              <div class="select">
+                <select name="currency" class="currency" onchange="updatevalue()"></select>
+              </div>
+            </div>
+          </div>
+    
+          <div class="field grid-50-50">
+            <div class="colmun col-left">
+              <input type="text" class="form-input" id="output" placeholder="00000" disabled>
+            </div>
+            <div class="colmun col-right">
+              <div class="select">
+                <select name="currency" class="currency" onchange="updatevalue()"></select>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+</body>
+<!--Iniciar AOS animated plugin-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

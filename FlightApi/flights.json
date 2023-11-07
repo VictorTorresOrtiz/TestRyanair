@@ -1,0 +1,55 @@
+
+    "data": [
+        {
+            "flight_date": "2023-11-08",
+            "flight_status": "scheduled",
+            
+            
+            
+            "departure": {
+                "airport": "Bathurst Island",
+                "timezone": "Australia\/Darwin",
+                "iata": "BRT",
+                "icao": "YBTI",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2023-11-08T02:30:00+00:00",
+                "estimated": "2023-11-08T02:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            
+            
+            
+            },
+            "arrival": {
+                "airport": "Darwin",
+                "timezone": "Australia\/Darwin",
+                "iata": "DRW",
+                "icao": "YPDN",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2023-11-07T02:44:00+00:00",
+                "estimated": "2023-11-07T02:44:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "CareFlight",
+                "iata": null,
+                "icao": "CFH"
+            },
+            "flight": {
+                "number": "28",
+                "iata": null,
+                "icao": "CFH28",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+      
