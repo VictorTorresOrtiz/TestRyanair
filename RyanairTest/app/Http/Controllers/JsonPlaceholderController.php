@@ -9,6 +9,7 @@ use GuzzleHttp\Client;
 
 class JsonPlaceholderController extends Controller
 {
+    //JSON PLACE HOLDER API
     public function getData()
     {
 
@@ -24,26 +25,8 @@ class JsonPlaceholderController extends Controller
         return view('index', ['data' => $data]);
 
     }
-    /*
-    public function getDataPosts()
-    {
 
-        $client = new Client();
-        $response = $client->request('GET', 'https://jsonplaceholder.typicode.com/posts');
-
-        $statusCode = $response->getStatusCode();
-        $content = $response->getBody();
-
-        $data = json_decode($content, true);
-
-        // Puedes devolver la data en una vista o hacer lo que necesites con ella
-        return view('index', ['data' => $data]);
-
-
-
-    }
-    */
-
+    //AVIATION API
     public function realTime(){
         $queryString = http_build_query([
             'access_key' => '0ad5e857cc8540b5c6786847185af4de'

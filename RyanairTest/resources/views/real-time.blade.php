@@ -19,7 +19,7 @@
                 </a>
                 <div class="navbar-nav w-100" data-aos="fade-right">
                     <a href="{{ url('/index') }}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Api (Part I)</a>
-                    <a href="#" class="nav-item nav-link active"><i class="fa fa-plus me-2"></i>Real-Time (Part II)</a>
+                    <a href="" class="nav-item nav-link active"><i class="fa fa-plus me-2"></i>Real-Time (Part II)</a>
                     <a href="#" class="nav-item nav-link"><i class="fa fa-lock me-2"></i>Lock</a>
                     <a href="#" class="nav-item nav-link"><i class="fa fa-cog me-2"></i>F1</a>
                     <a href="#" class="nav-item nav-link"><i class="fa fa-cogs me-2"></i>SPR</a>
@@ -34,7 +34,7 @@
         <div class="content">
             <!-- Navbar Start -->
             <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
-                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                <a href="" class="navbar-brand d-flex d-lg-none me-4">
                     <h2 class="text-primary mb-0">Operations</h2>
                 </a>
                 <a href="#" class="sidebar-toggler flex-shrink-0">
@@ -53,10 +53,10 @@
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">
                                 <h6 class="fw-normal mb-0">Name</h6>
-                                <small>JsonPlaceHolder</small>
+                                <small>AVIATION API</small>
                             </a>
                             <hr class="dropdown-divider">
-                            <a href="https://jsonplaceholder.typicode.com/users" class="dropdown-item">
+                            <a href="https://api.aviationstack.com/v1/flights?" class="dropdown-item">
                                 <h6 class="fw-normal mb-0">URL Click Here</h6>
 
                             </a>
@@ -141,6 +141,9 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                     @foreach ($flights as $flight)
+                                        <td>{{ $flight['airline_name'] }} flight {{ $flight['flight_iata'] }} from {{ $flight['departure_airport'] }} ({{ $flight['departure_iata'] }}) to {{ $flight['arrival_airport'] }} ({{ $flight['arrival_iata'] }}) is in the air.</td>
+                                    @endforeach
 
                                 </tr>
                             </tbody>
